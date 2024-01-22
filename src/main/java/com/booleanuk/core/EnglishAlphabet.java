@@ -3,9 +3,10 @@ package com.booleanuk.core;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Alphabet {
+public class EnglishAlphabet implements IAlphabet {
     public Map<Character, Integer> getLetterScores() {
-        return new HashMap<>(){{
+        return new HashMap<>(){
+            {
             put('a', 1);
             put('b', 3);
             put('c', 3);
@@ -32,6 +33,7 @@ public class Alphabet {
             put('x', 8);
             put('y', 4);
             put('z', 10);
-        }};
+        }
+        };
     }
 }
